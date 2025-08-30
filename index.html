@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="game-header">
+        <h1 class="game-title">JOKENPÔ</h1>
+
+      </header>
+
+      <div class="scoreboard">
+        <div class="player-score">
+          <div class="score-label">JOGADOR</div>
+          <div class="score-value" id="player-score">0</div>
+        </div>
+        <div class="vs-divider">VS</div>
+        <div class="computer-score">
+          <div class="score-label">COMPUTADOR</div>
+          <div class="score-value" id="computer-score">0</div>
+        </div>
+      </div>
+
+      <div class="game-area">
+        <div class="cards-container">
+          <div class="card" data-choice="rock" data-testid="button-card-rock">
+            <div class="card-content">
+              <div class="card-emoji">✊</div>
+              <div class="card-name">PEDRA</div>
+            </div>
+          </div>
+          <div class="card" data-choice="paper" data-testid="button-card-paper">
+            <div class="card-content">
+              <div class="card-emoji">✋</div>
+              <div class="card-name">PAPEL</div>
+            </div>
+          </div>
+          <div class="card" data-choice="scissors" data-testid="button-card-scissors">
+            <div class="card-content">
+              <div class="card-emoji">✌️</div>
+              <div class="card-name">TESOURA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="battle-area" id="battle-area" style="display: none;">
+        <div class="battle-card player-choice">
+          <div class="battle-label">SUA ESCOLHA</div>
+          <div class="battle-emoji" id="player-choice-emoji"></div>
+        </div>
+        <div class="vs-battle"> X </div>
+        <div class="battle-card computer-choice">
+          <div class="battle-label">COMPUTADOR</div>
+          <div class="battle-emoji" id="computer-choice-emoji"></div>
+        </div>
+      </div>
+
+      <div class="result-area" id="result-area" style="display: none;">
+        <div class="result-text" id="result-text"></div>
+        <div class="result-description" id="result-description"></div>
+        <button class="play-again-btn" id="play-again-btn" data-testid="button-new-round">NOVA RODADA</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-value" id="wins" data-testid="text-wins">0</div>
+          <div class="stat-label">VITÓRIAS</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="draws" data-testid="text-draws">0</div>
+          <div class="stat-label">EMPATES</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="losses" data-testid="text-losses">0</div>
+          <div class="stat-label">DERROTAS</div>
+        </div>
+      </div>
+
+      <div class="game-status" id="game-status" data-testid="text-waiting-message">
+        Escolha uma carta para começar o duelo!
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+
+  </body>
+
+</html>
