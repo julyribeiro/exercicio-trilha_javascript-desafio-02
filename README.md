@@ -34,7 +34,7 @@ Durante o desenvolvimento foram explorados:
 ---
 
 ## 🌐 Demonstração
-➡ 🔗 [Clique no link a para acessar o projeto online](https://julyribeiro.github.io/api-pokedex)
+➡ 🔗 [Clique no link a para acessar o projeto online](https://julyribeiro.github.io/exercicio-trilha_javascript-desafio-02/)
 
 ---
 
